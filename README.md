@@ -8,6 +8,7 @@ Projeto de Frontend do site <a href="https://roadmap.sh/">roadmap.sh</a>
 * [Sobre o Projeto](#about)
 * [Habilidades Necessárias](#abilities)
 * [Requisitos Chave](#key-requirements)
+* [Pontos Importantes](#key-points)
 * [Links Úteis](#links)
 * [Créditos](#credits)
 
@@ -47,7 +48,12 @@ Requisito | Explicação
 **Color Contrast** | Certificar que a cor de contraste entre o texto e o *background* seja suficiente para atender ao ***WCAG*** (Web Content Accessibility Guidelines)
 **Interactive Elements** | Ter a certeza de que o botão de *show/hide*, para as senhas, seja acessível via teclado
 
-<!--
+
+<h1 id="key-points"> Pontos Importantes </h1>
+
+Vale resaltar alguns pontos para lembrar no decorrer do projeto:
+* Como é um *forms*, na hora de usar `<input type="radio">`, e tivermos, por exemplo, 17 opções, primeiro colocamos, como um de seus atributos, o `name="igual_em_todos"`. O motivo é para que, assim que marcarmos uma opção, ela não ficará marcada por si só, e sim alternará entre as existentes; 
+
 <h1 id="links"> Links Úteis </h1>
 
 
@@ -55,9 +61,10 @@ A seção abaixo foi adicionada para caso queira verificar algum conteúdo de es
 
 *Tipo do Estudo* | Nome do Artigo
 :---------: | :------:
-**HTML: OG tags** | <a href="https://www.freecodecamp.org/portuguese/news/o-que-e-open-graph-e-como-posso-utiliza-lo-no-meu-site-da-web/">O que é Open Graph e como posso utilizá-lo no meu site da web?</a>
+**HTML: forms** | <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Your_first_form">Your first form</a> <br> <a href="https://www.w3schools.com/html/html_forms.asp">HTML Forms</a>
+**git** | <a href="https://github.com/github/docs/blob/main/content/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax.md">basic-writing-and-formatting-syntax.md</a>
 **roadmap.sh** | O link do projeto pode ser encontrado <a href="https://roadmap.sh/projects/accessible-form-ui">aqui</a>
--->
+
 
 <h1 id="credits"> Créditos </h1>
 
