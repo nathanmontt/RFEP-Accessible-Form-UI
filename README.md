@@ -52,7 +52,8 @@ Requisito | Explicação
 <h1 id="key-points"> Pontos Importantes </h1>
 
 Vale resaltar alguns pontos para lembrar no decorrer do projeto:
-* Como é um *forms*, na hora de usar `<input type="radio">`, e tivermos, por exemplo, 17 opções, primeiro colocamos, como um de seus atributos, o `name="igual_em_todos"`. O motivo é para que, assim que marcarmos uma opção, ela não ficará marcada por si só, e sim alternará entre as existentes; 
+* Como é um *forms*, na hora de usar `<input type="radio">`, e tivermos, por exemplo, 17 opções, primeiro colocamos, como um de seus atributos, o `name="igual_em_todos"`. O motivo é para que, assim que marcarmos uma opção, ela não ficará marcada por si só, e sim alternará entre as existentes;
+* Outro ponto sobre o atribuito name é que, dependendo da _action_ (`form action="" method="get/post"`), na parte do _server-side_, é possível acessar os dados submetidos pelo **_name_**;
 
 <h1 id="links"> Links Úteis </h1>
 
@@ -62,6 +63,7 @@ A seção abaixo foi adicionada para caso queira verificar algum conteúdo de es
 *Tipo do Estudo* | Nome do Artigo
 :---------: | :------:
 **HTML: forms** | <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Your_first_form">Your first form</a> <br> <a href="https://www.w3schools.com/html/html_forms.asp">HTML Forms</a>
+**CSS (and others)** | <a href="https://www.w3schools.com/cssref/css3_pr_clip-path.php">CSS clip-path Property</a> <br> <a href="https://www.youtube.com/watch?v=SKU2gExpkPI&t=194s"> How to make Circular Progress Bar in HTML CSS & JavaScript | Skills Bar </a>
 **git** | <a href="https://github.com/github/docs/blob/main/content/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax.md">basic-writing-and-formatting-syntax.md</a>
 **roadmap.sh** | O link do projeto pode ser encontrado <a href="https://roadmap.sh/projects/accessible-form-ui">aqui</a>
 
