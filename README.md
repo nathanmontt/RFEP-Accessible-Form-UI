@@ -52,7 +52,8 @@ Requisito | Explicação
 <h1 id="key-points"> Pontos Importantes </h1>
 
 Vale resaltar alguns pontos para lembrar no decorrer do projeto:
-* Como é um *forms*, na hora de usar `<input type="radio">`, e tivermos, por exemplo, 17 opções, primeiro colocamos, como um de seus atributos, o `name="igual_em_todos"`. O motivo é para que, assim que marcarmos uma opção, ela não ficará marcada por si só, e sim alternará entre as existentes; 
+* Como é um *forms*, na hora de usar `<input type="radio">`, e tivermos, por exemplo, 17 opções, primeiro colocamos, como um de seus atributos, o `name="igual_em_todos"`. O motivo é para que, assim que marcarmos uma opção, ela não ficará marcada por si só, e sim alternará entre as existentes;
+* Outro ponto sobre o atribuito name é que, dependendo da _action_ (`form action="" method="get/post"`), na parte do _server-side_, é possível acessar os dados submetidos pelo **_name_**;
 
 <h1 id="links"> Links Úteis </h1>
 
