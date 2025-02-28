@@ -25,24 +25,24 @@
 <body>
     <main>
         <form action="#">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="full-name" placeholder="Wht should we call you?" requi>
+            <label for="name" aria-label="Full Name">Full Name</label>
+            <input type="text" id="name" name="full-name" placeholder="What should we call you?" required aria-placeholder="What should we call you?">
 
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Your most-used email" id="email" required>
+            <label for="email" aria-label="Email">Email</label>
+            <input type="email" name="email" placeholder="Your most-used email" id="email" aria-placeholder="Your most-used email" required>
 
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="A strong one!" required>
+            <label for="password" aria-label="Password">Password</label>
+            <input type="password" name="password" id="password" placeholder="A strong one!" aria-placeholder="A strong one!" required>
             <div class="holder-show-hide-password">
                 <input type="checkbox" name="show-hide-password" id="show-hide-password">
-                <label for="show-hide-password">Show Password</label>
+                <label for="show-hide-password" aria-label="Show Password">Show Password</label>
             </div>
 
-            <label for="password-check">Confirm Password</label>
+            <label for="password-check" aria-label="Confirm Password">Confirm Password</label>
             <input type="password" name="password-check" id="password-check" required>
             <div class="holder-show-hide-password">
                 <input type="checkbox" name="show-hide-confirm-password" id="show-hide-confirm-password">
-                <label for="show-hide-confirm-password">Show Password</label>
+                <label for="show-hide-confirm-password" aria-label="Show Password">Show Password</label>
             </div>
 
             <input type="submit" value="Update Profile">
