@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+    font-family: var(--mainFont);
+}
+
+:root {
+    /* Colors */
+    --primary: #171717;
+    --secondary: #ededed;
+    --tertiary: #1569c8;
+    --grayColor: #ababab;
+    --todoBackground: #b9b9b9;
+
+    /* Measures */
+    --mainMeasure: 1em;
+    --secMainMeasure: 3em;
+    --secMeasure: 2em;
+    --rdMeasure: 0.5em;
+    --thMeasure: 0.2em;
+    --diffMeasure: 0.01em;
+    --fontSizeTitle: 1.3em;
+    --fontSizeParagraph: 1.1em;
+    --firstSizeWidthHeight: 7em;
+    --secondSizeWidthHeight: 8em;
+
+    /* Fonts */
+    --mainFont: "Roboto", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--tertiary);
+}
+
+.done {
+    color: var(--grayColor);
+    text-decoration: line-through;
+}
+
+main {
+    display: flex;
+    padding: var(--secMainMeasure);
+    background-color: var(--secondary);
+    border-radius: 1em;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: var(--secMeasure);
+}
+
+form label {
+    margin-bottom: var(--thMeasure);
+}
+
+form .holder-show-hide-password {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mainMeasure);
+}
+
+form input[type="text"], input[type="email"]{
+    width: 30em;
+    margin-bottom: var(--mainMeasure);
+    padding: var(--rdMeasure);
+    line-height: 2em;
+    border-radius: .5em;
+
+    border: var(--diffMeasure) solid var(--primary);
+}
+
+/* form input[type="text"]:focus, input[type="email"]:focus {
+    border: var(--diffMeasure) solid var(--primary);
+} */
+
+form input[type="password"] {
+    width: 30em;
+    padding: var(--rdMeasure);
+    line-height: 2em;
+    border-radius: .5em;
+    
+    border: var(--diffMeasure) solid var(--primary);
+}
+
+form input[type="submit"] {
+    border-radius: .5em;
+    width: 100%;
+    padding: var(--mainMeasure);
+    margin-top: var(--secMeasure);
+
+    border: var(--diffMeasure) solid var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary);
+    cursor: pointer; 
+    
+    transition: color .5s, background-color .5s, border .5s;
+}
+
+form input[type="submit"]:hover {
+    color: var(--secondary);
+    background-color: var(--tertiary);
+    border: var(--diffMeasure) solid transparent;
+}
+
+
+/* INFOS */
+main .container-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-profile .container-completeness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.container-completeness .circular-progress {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background: conic-gradient(var(--tertiary) 240deg, #ededed 0deg);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+}
+
+.circular-progress .progress-value {
+    position: relative;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.container-completeness .text {
+    font-size: var(--fontSizeParagraph);
+    margin-bottom: var(--mainMeasure);
+}
+
+/* -------------------------- */
+
+.container-profile .container-todo-list {
+    border-radius: 1em;
+    background-color: var(--todoBackground);
+}
+
+.container-todo-list ul {
+    padding: var(--mainMeasure);
+}
+
+ul .options-todo {
+    margin: var(--mainMeasure) 0;
+}
